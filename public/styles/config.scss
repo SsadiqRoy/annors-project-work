@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+
+  @media (max-width: 75em) {
+    font-size: 56.25%;
+  }
+  @media (max-width: 56.25em) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: $font;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+}
+.btn {
+  border: none;
+  outline: none;
+  font-weight: bold;
+  border-radius: $radius-small;
+  cursor: pointer;
+}
+
+.btn-normal {
+  padding: 1rem 1.5rem;
+}
+.btn-full {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+.btn-gold {
+  background-color: $cl-gold;
+  color: $cl-white;
+}
+.btn-blue {
+  background-color: $cl-blue;
+  color: $cl-white;
+}

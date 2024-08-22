@@ -1,0 +1,30 @@
+$font: segoe;
+
+$cl-primary: #4caf50;
+$cl-primary-dark: #388e3c;
+$cl-bg: #e9e9e9;
+$cl-white: #f1f1f1;
+$cl-blue: #007bff;
+$cl-gold: #e0c008;
+$cl-red: #ca3030;
+$cl-green: #0cd312;
+
+$radius-small: 5px;
+$radius-normal: 10px;
+$radius-big: 15px;
+
+@mixin scrollbar {
+  &::-webkit-scrollbar {
+    width: 1.6rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $cl-white;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: darken($cl-bg, 10);
+    border: 4px solid $cl-white;
+    border-radius: $radius-normal;
+  }
+}

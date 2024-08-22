@@ -1,0 +1,134 @@
+.modal {
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+
+  position: absolute;
+  left: 100%;
+  top: 0;
+  z-index: 20;
+  background-color: #00000073;
+  transition: all 0.5s ease-in;
+
+  display: flex;
+  justify-content: end;
+
+  &-container {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    background-color: $cl-bg;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-heading {
+    width: 100%;
+    padding-block: 1rem;
+    border-bottom: 1px solid darken($cl-bg, 20);
+    text-align: center;
+  }
+
+  &-content {
+    flex-grow: 1;
+    height: 20rem;
+    overflow: auto;
+    padding-bottom: 1rem;
+
+    @include scrollbar;
+  }
+}
+
+.modal--open {
+  left: 0;
+}
+
+.voting-form {
+  padding: 2rem;
+
+  &-section {
+    width: 100%;
+    border-radius: $radius-normal;
+    padding: 3rem 1rem;
+    background-color: $cl-white;
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+
+    &-title {
+      text-align: center;
+      color: $cl-blue;
+      margin-bottom: 2rem;
+      text-transform: capitalize;
+    }
+
+    .form-group {
+      padding-inline: 1rem;
+      border-bottom: 1px solid darken($cl-bg, 10);
+
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      justify-content: space-between;
+
+      input[type="radio"] {
+        flex-shrink: 0;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 3px solid darken($cl-bg, 30);
+        border-radius: 50%;
+        cursor: pointer;
+
+        display: grid;
+        place-items: center;
+
+        &::before {
+          content: "";
+          width: 80%;
+          height: 80%;
+          background-color: transparent;
+          border: 3px solid $cl-white;
+          border-radius: inherit;
+        }
+
+        &:checked {
+          background-color: $cl-primary;
+          border: none;
+        }
+      }
+
+      label.label-candidate {
+        text-transform: capitalize;
+        flex-grow: 1;
+        cursor: pointer;
+        padding-block: 1rem;
+
+        .candidate {
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+
+          &-image {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
