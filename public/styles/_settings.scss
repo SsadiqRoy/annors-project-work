@@ -1,0 +1,138 @@
+.settings {
+  max-width: 800px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  h1,
+  h2 {
+    color: #333;
+    text-align: center;
+  }
+  p {
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  .cta-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .cta-btn:hover {
+    background-color: #45a049;
+  }
+  &-features {
+    margin-top: 30px;
+  }
+  &-feature {
+    margin-bottom: 20px;
+
+    h3 {
+      color: #4caf50;
+    }
+    p {
+      color: #666;
+    }
+  }
+  &-help-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+
+    h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #555;
+      line-height: 1.6;
+    }
+  }
+  &-contact-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+
+    h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #555;
+      line-height: 1.6;
+    }
+  }
+  &-comment-box {
+    margin-top: 20px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    textarea {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: vertical;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      max-width: 200px;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: #45a049;
+      }
+    }
+  }
+  &-footer {
+    text-align: center;
+    margin-top: 30px;
+
+    p {
+      text-align: center;
+      font-weight: bold;
+      color: black;
+    }
+  }
+  &-map-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+
+    h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+  }
+  .map {
+    width: 100%;
+    height: 40rem;
+    border-radius: 5px;
+  }
+}

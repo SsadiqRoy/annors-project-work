@@ -84,6 +84,7 @@
         td {
           border-bottom: 1px solid darken($cl-bg, 10);
           padding: 1rem;
+          color: $cl-text;
 
           &:not(:first-child) {
             text-align: center;

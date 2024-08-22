@@ -8,7 +8,7 @@ export default function VotingSection({ title }) {
       <table>
         <thead>
           <tr>
-            <th>candidate</th>
+            <th>candidates</th>
             <th>votes</th>
             <th>votes(%)</th>
           </tr>

@@ -40,7 +40,7 @@ function FormGroup({ image, name, groupName }) {
           <span>{name}</span>
         </span>
       </label>
-      <input type="radio" className="input-radio" name={`${groupName}`} id={name} />
+      <input type="radio" className="input-radio" name={`${groupName}`} id={name} value={name} required />
     </div>
   );
 }

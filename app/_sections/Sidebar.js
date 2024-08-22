@@ -30,7 +30,7 @@ export default function Sidebar() {
               <li className="sidebar-menu-item">
                 <Link href="#">
                   <span className="sidebar-menu-item-icon">
-                    <img src="images/canr.png" alt="College Of Agriculture" />
+                    <img src="/images/canr.png" alt="College Of Agriculture" />
                   </span>
                   <span className="sidebar-menu-item-text">College of Agriculture and Natural Resources</span>
                 </Link>
@@ -38,7 +38,7 @@ export default function Sidebar() {
               <li className="sidebar-menu-item">
                 <Link href="#">
                   <span className="sidebar-menu-item-icon">
-                    <img src="images/cabe.png" alt="College Of Agriculture" />
+                    <img src="/images/cabe.png" alt="College Of Agriculture" />
                   </span>
                   <span className="sidebar-menu-item-text">College of Art and Built Environment</span>
                 </Link>
@@ -46,7 +46,7 @@ export default function Sidebar() {
               <li className="sidebar-menu-item">
                 <Link href="#">
                   <span className="sidebar-menu-item-icon">
-                    <img src="images/coe.png" alt="College Of Agriculture" />
+                    <img src="/images/coe.png" alt="College Of Agriculture" />
                   </span>
                   <span className="sidebar-menu-item-text">College of Engineering</span>
                 </Link>
@@ -54,7 +54,7 @@ export default function Sidebar() {
               <li className="sidebar-menu-item">
                 <Link href="#">
                   <span className="sidebar-menu-item-icon">
-                    <img src="images/chs.png" alt="College Of Agriculture" />
+                    <img src="/images/chs.png" alt="College Of Agriculture" />
                   </span>
                   <span className="sidebar-menu-item-text">College of Healt Science</span>
                 </Link>
@@ -62,7 +62,7 @@ export default function Sidebar() {
               <li className="sidebar-menu-item">
                 <Link href="#">
                   <span className="sidebar-menu-item-icon">
-                    <img src="images/cohss.png" alt="College Of Agriculture" />
+                    <img src="/images/cohss.png" alt="College Of Agriculture" />
                   </span>
                   <span className="sidebar-menu-item-text">College of Humanities and Social Science</span>
                 </Link>
@@ -70,7 +70,7 @@ export default function Sidebar() {
               <li className="sidebar-menu-item">
                 <Link href="#">
                   <span className="sidebar-menu-item-icon">
-                    <img src="images/cos.png" alt="College Of Agriculture" />
+                    <img src="/images/cos.png" alt="College Of Agriculture" />
                   </span>
                   <span className="sidebar-menu-item-text">College of Science</span>
                 </Link>
@@ -85,7 +85,7 @@ export default function Sidebar() {
               <li className="sidebar-menu-item">
                 <Link href="#">
                   <span className="sidebar-menu-item-icon">
-                    <img src="images/domite.png" alt="African Hall" />
+                    <img src="/images/domite.png" alt="African Hall" />
                   </span>
                   <span className="sidebar-menu-item-text">African Hall</span>
                 </Link>
@@ -93,7 +93,7 @@ export default function Sidebar() {
               <li className="sidebar-menu-item">
                 <Link href="#">
                   <span className="sidebar-menu-item-icon">
-                    <img src="images/spartans.png" alt="Independence Hall" />
+                    <img src="/images/spartans.png" alt="Independence Hall" />
                   </span>
                   <span className="sidebar-menu-item-text">Independence Hall</span>
                 </Link>
@@ -101,7 +101,7 @@ export default function Sidebar() {
               <li className="sidebar-menu-item">
                 <Link href="#">
                   <span className="sidebar-menu-item-icon">
-                    <img src="images/queens.png" alt="Queens Hall" />
+                    <img src="/images/queens.png" alt="Queens Hall" />
                   </span>
                   <span className="sidebar-menu-item-text">Queen Elizabeth II Hall</span>
                 </Link>
@@ -109,7 +109,7 @@ export default function Sidebar() {
               <li className="sidebar-menu-item">
                 <Link href="#">
                   <span className="sidebar-menu-item-icon">
-                    <img src="images/republic.png" alt="Republic Hall" />
+                    <img src="/images/republic.png" alt="Republic Hall" />
                   </span>
                   <span className="sidebar-menu-item-text">Republic Hall</span>
                 </Link>
@@ -117,7 +117,7 @@ export default function Sidebar() {
               <li className="sidebar-menu-item">
                 <Link href="#">
                   <span className="sidebar-menu-item-icon">
-                    <img src="images/conti-with-bg.png" alt="Unity Hall" />
+                    <img src="/images/conti-with-bg.png" alt="Unity Hall" />
                   </span>
                   <span className="sidebar-menu-item-text">Unity Hall</span>
                 </Link>
@@ -125,7 +125,7 @@ export default function Sidebar() {
               <li className="sidebar-menu-item">
                 <Link href="#">
                   <span className="sidebar-menu-item-icon">
-                    <img src="images/katanga.png" alt="University Hall" />
+                    <img src="/images/katanga.png" alt="University Hall" />
                   </span>
                   <span className="sidebar-menu-item-text">University Hall</span>
                 </Link>
@@ -137,7 +137,7 @@ export default function Sidebar() {
         {/*  */}
 
         <li className="sidebar-menu-item">
-          <Link href="#">
+          <Link href="/dashboard/about">
             <span className="sidebar-menu-item-icon">
               <LuScrollText />
             </span>
@@ -145,7 +145,7 @@ export default function Sidebar() {
           </Link>
         </li>
         <li className="sidebar-menu-item">
-          <Link href="#">
+          <Link href="/dashboard/settings">
             <span className="sidebar-menu-item-icon">
               <IoSettingsSharp />
             </span>
