@@ -1,6 +1,12 @@
+"use client";
+
 export default function VotingForm() {
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
+
   return (
-    <form className="voting-form">
+    <form className="voting-form" onSubmit={handleSubmit}>
       <VotingSection title="president">
         <FormGroup name="Emilia Ansah gyimah" image="user-1" groupName="president" />
         <FormGroup name="Samuel Effah boafo" image="user-2" groupName="president" />

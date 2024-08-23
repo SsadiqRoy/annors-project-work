@@ -1,0 +1,39 @@
+.error {
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+
+  background-color: darken($cl-bg, 15);
+
+  position: relative;
+
+  display: grid;
+  place-items: center;
+  place-content: center;
+
+  &-box {
+    position: absolute;
+    width: 90%;
+    max-width: 700px;
+    background-color: $cl-white;
+    border-radius: $radius-normal;
+    padding: 4rem;
+    text-align: center;
+    color: $cl-text;
+
+    h3,
+    p {
+      margin-bottom: 2rem;
+    }
+
+    &-links {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

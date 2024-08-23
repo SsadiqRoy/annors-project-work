@@ -56,6 +56,16 @@
     display: grid;
     place-items: center;
 
+    &-error {
+      text-align: center;
+      margin-bottom: 2rem;
+      padding: 1.5rem 1rem;
+      border: 1px solid $cl-red;
+      color: $cl-red;
+      border-radius: $radius-normal;
+      background-color: lighten($color: $cl-red, $amount: 40);
+    }
+
     &-heading {
       text-align: center;
       color: $cl-primary;

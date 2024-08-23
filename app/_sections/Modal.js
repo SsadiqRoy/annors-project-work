@@ -2,9 +2,8 @@
 
 import { useEffect, useRef } from "react";
 import { useModalCtx } from "../_context/ModalContext";
-import VotingForm from "./VotingForm";
 
-export default function Modal({ title }) {
+export default function Modal({ children, title }) {
   const { isOpen, closeModal } = useModalCtx();
   const modal = useRef();
 
@@ -30,9 +29,7 @@ export default function Modal({ title }) {
           <h3>{title}</h3>
         </div>
 
-        <div className="modal-content">
-          <VotingForm />
-        </div>
+        <div className="modal-content">{children}</div>
       </div>
     </div>
   );
