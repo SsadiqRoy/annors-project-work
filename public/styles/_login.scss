@@ -1,0 +1,95 @@
+.login {
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  background-image: url(/images/knust-entrance.png);
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+
+  position: relative;
+
+  &-overlay {
+    background-color: rgba(0, 0, 0, 0.575);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    inset: 0;
+  }
+
+  &-container {
+    width: 90%;
+    height: 90%;
+    max-width: 600px;
+    max-height: 500px;
+    margin-inline: auto;
+    border-radius: $radius-normal;
+    background-color: $cl-bg;
+    overflow: hidden;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &-logo {
+    display: grid;
+    place-items: center;
+    width: 100%;
+
+    img {
+      width: 25rem;
+    }
+  }
+
+  &-form {
+    background-color: #f0fff0;
+    padding: 2rem;
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+
+    &-heading {
+      text-align: center;
+      color: $cl-primary;
+    }
+
+    .form-group {
+      width: 100%;
+      margin-block: 1.5rem;
+
+      label {
+        display: block;
+        width: max-content;
+        text-transform: capitalize;
+        margin-bottom: 0.5rem;
+      }
+
+      input {
+        width: 100%;
+        font-family: $font;
+        border-radius: $radius-small;
+        border: 1px solid $cl-bg;
+        font-size: 1.6rem;
+        padding: 0.5rem;
+        outline: 1px solid transparent;
+
+        &:focus {
+          outline-offset: 2px;
+          outline-color: $cl-primary;
+        }
+      }
+    }
+  }
+
+  &-issues {
+    font-size: 1.3rem;
+  }
+}

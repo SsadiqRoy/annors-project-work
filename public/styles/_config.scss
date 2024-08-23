@@ -35,6 +35,13 @@ ul {
   font-weight: bold;
   border-radius: $radius-small;
   cursor: pointer;
+  color: $cl-white;
+
+  &:focus {
+    outline-width: 1px;
+    outline-style: solid;
+    outline-offset: 2px;
+  }
 }
 
 .btn-normal {
@@ -47,9 +54,13 @@ ul {
 }
 .btn-gold {
   background-color: $cl-gold;
-  color: $cl-white;
+  outline-color: $cl-gold;
 }
 .btn-blue {
   background-color: $cl-blue;
-  color: $cl-white;
+  outline-color: $cl-blue;
+}
+.btn-green {
+  background-color: $cl-primary;
+  outline-color: $cl-primary;
 }
